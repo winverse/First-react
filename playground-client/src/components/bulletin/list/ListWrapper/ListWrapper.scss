@@ -1,0 +1,21 @@
+@import 'utils';
+
+.list-wrapper {
+  border: $oc-gray-7;
+  max-width: 768px;
+  margin: 0px auto;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media("<=wide") {
+    width: 768px;
+  }
+  @include media("<=desktop") {
+    width: 512px;
+  }
+  @include media("<=tablet") {
+    width: 100%;
+  }
+}

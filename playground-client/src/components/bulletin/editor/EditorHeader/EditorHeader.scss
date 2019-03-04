@@ -1,0 +1,17 @@
+@import 'utils';
+
+.editor-header {
+  background: $oc-indigo-7;
+  height: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  display: flex;
+  align-items: center;
+  
+  .back{
+    margin-left: auto;
+  }
+  .submit{
+    margin-left: 1rem;
+  }
+}

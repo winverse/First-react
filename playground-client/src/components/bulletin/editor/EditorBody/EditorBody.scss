@@ -1,0 +1,45 @@
+@import 'utils';
+
+.EditorBox{
+  min-height: calc(100vh - 8.4rem);
+
+  .title{
+    display: flex;
+    width: calc(100% - 4rem);
+    height: 40px;
+    background: white;
+    outline:none;
+    position: absolute;
+    border: none;
+    top: -45px;
+    left: 0px;
+    font-size: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include material-shadow(1, 0.5);
+  }
+  .rdw-storybook-wrapper{
+    margin-top: 2rem;
+  }
+  .rdw-storybook-root{
+    width: 55%;
+    margin: -10px auto 0;
+    position: relative;
+    .rdw-storybook-toolbar{
+      @include material-shadow(1, 0.5);
+    }
+
+    .rdw-storybook-editor{
+      margin-top: 0.5rem;
+      background: white;
+      min-height: 665px;
+      max-height: 665px;
+      font-size: 1.25rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      overflow-y: scroll;
+      z-index: 10;
+      @include material-shadow(1, 0.5);
+    }
+  }
+}

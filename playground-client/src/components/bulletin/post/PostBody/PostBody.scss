@@ -1,0 +1,27 @@
+@import 'utils';
+
+.post-body {
+  .paper {
+    padding: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background: white;
+    user-select: none;
+    @include material-shadow(4, 0.5);
+    transform: translateY(-1rem); 
+    margin: 0 auto;
+    min-height: 20rem;
+
+    // 해상도에 따라 다른 width를 설정합니다
+    width: 1024px;
+    @include media("<desktop") { width: 768px; }
+    @include media("<tablet") { width: calc(100% - 2rem); }
+    .rdw-storybook-toolbar{
+      display: none;
+    }
+  }
+}
+
+span, p, img {
+  user-select: none;
+}
